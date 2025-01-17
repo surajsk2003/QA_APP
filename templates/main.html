@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}qn_App{% endblock title %}</title>
+    {% comment %} {% load static %} {% endcomment %}
+    <!-- Link to static CSS file -->
+    {% comment %} <link rel="stylesheet" href="{% static 'css/styles.css' %}"> {% endcomment %}
+</head>
+<body>
+    <!-- Navbar or Header -->
+     {%include 'navbar.html'%}
+     {% block content %}
+     
+     {% endblock %}
+
+</body>
+</html>
